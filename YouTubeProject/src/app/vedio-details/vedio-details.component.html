@@ -1,0 +1,9 @@
+
+<div *ngIf="receivValue" class="frameV" style="margin-top:13%" >
+  <!-- <iframe src={{receivValue.id.videoId}} width="420" height="auto"></iframe>
+  
+    <p>{{receivValue.snippet.description}}</p>  -->
+  <iframe width="700" height="450" [src]="getSantizeUrl(baseUrl+receivValue.id.videoId)" ></iframe>
+  <p class="p1">{{receivValue.snippet.title}}</p>
+  <!-- "{{url+'('+receivValue.id.videoId + ')'}}" -->
+</div>
